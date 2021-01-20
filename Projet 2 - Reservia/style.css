@@ -1,3 +1,33 @@
- font-family: 'Raleway', sans-serif;
+ #bloc_page
+ {
+     font-family: 'Raleway', sans-serif;
+ }
+ 
+/*header vide pour l'instant*/
 
+.conteneur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conteneur1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conteneur2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+}
 
