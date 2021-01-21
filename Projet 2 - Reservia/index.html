@@ -16,10 +16,9 @@
 
             <!-- Header -->
             <header>
-                <div class="logo">
-                    <img src="head/Reservia.svg" alt="logo"/>
+                <div id="logo">
+                    <img src="head/Reservia.svg" alt="logo Reservia"/>
                 </div>
-
                 <nav>
                     <ul>
                         <li> <a href="#">Hébergements</a></li>
@@ -27,14 +26,13 @@
                         <li> <a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
+            
 
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
-
                 <div><i class="fas fa-map-marker-alt"></i></div>
                 <input type="search" />
                 <input type="submit" value="Rechercher" />
-
                 <div id="filtres">
                     <p>Filtres</p>
                     <div><i class="fas fa-money-bill-wave">Economique</i></div>
@@ -42,21 +40,18 @@
                     <div><i class="fas fa-heart">Romantique</i></div>
                     <div><i class="fas fa-dog">Animaux autorisés</i></div>
                 </div>
-
                 <div>
                     <span><i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i></span>
                 </div>
-            
-        </header>
+            </header>
 
             <!-- Section -->
             <section>
                 <!-- Aside 1 : Hébergements Marseille  -->
-                <aside >
+                
+                <aside>
+                    <div id="conteneur"> 
                     <h1>Hébergements à Marseille</h1>
-
-                    <div class="conteneur"> 
-
                         <div class="children">
                             <img src="body/hebergements/1.jpg" alt="photo"/>
                             <h2>Auberge la Cannebière</h2>
@@ -108,11 +103,11 @@
                 </aside>
                
                 <!-- Aside 2 : Les plus populaires -->
-                <aside class="conteneur1">
+                <aside id="conteneur1">
                     <h1>Les plus populaires </h1> <i class="fas fa-chart-line"></i>
                     
                     <div class="children1">
-                        <img src="body/populaires/7.jpg" alt="photo"/>
+                        <img src="body/populaires/7.jpg" alt="photo Hôtel Le soleil du matin"/>
                         <h2>Hôtel Le soleil du matin</h2>
                         <p>Nuit à partir de 128 <strong>€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -120,55 +115,61 @@
                     </div> 
                     
                     <div class="children1">
-                        <img src="body/populaires/8.jpg" alt="photo"/>
+                        <img src="body/populaires/8.jpg" alt="photo Au coeur de l'eau Chambres d'hôtes"/>
                         <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                         <p>Nuit à partir de 71 <strong>€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                             class="fas fa-star"></i>
                     </div>
 
+                   
                     <div class="children1">
-                        <img src="body/populaires/9.jpg" alt="photo"/>
+                        <img src="body/populaires/9.jpg" alt="photo Hôtel Tout bleu et Blanc"/>
                         <h2>Hôtel Tout bleu et Blanc</h2>
                         <p>Nuit à partir de 68 <strong>€</strong></p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i>
-                    </div>
-
+                        <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></span>
+                    </div>   
                 </aside>
-                
-                <!-- Aside 3 : Activités à Marseille -->
-                <aside class="conteneur2">
-                    <h1>Activités à Marseille</h1>
-
-                    <div class="children2">
-                        <img src="body/activites/1.jpg" alt="photo"/>
-                        <h2>Vieux Port</h2>
-                    </div>
-                    <div class="children2">
-                        <img src="body/activites/2.jpg" alt="photo"/>
-                        <h2>Fort de Pomègues</h2>
-                    </div>
-                    <div class="children2">
-                        <img src="body/activites/3.jpg" alt="photo"/>
-                        <h2>Iles de Frioul</h2>
-                    </div>
-                    <div class="children2">
-                        <img src="body/activites/4.jpg" alt="photo"/>
-                        <h2>Parc National des Calanques</h2>
-                    </div>
-                    <div class="children2">
-                        <img src="body/activites/5.jpg" alt="photo"/>
-                        <h2>Notre-Dame-de-la-Garde</h2>
-                    </div>
-                    <div class="children2">
-                        <img src="body/activites/6.jpg" alt="photo"/>
-                        <h2>Parc Longchamp</h2>
-                    </div>
-
-                </aside>
-                
+                        
             </section>
+          
+                
+                <!-- Section 2 : Activités à Marseille -->
+                
+                <h1>Activités à Marseille</h1>
+                <div id="activites">
+                    <figure class="children2">
+                        <img src="body/activites/1.jpg" alt="photo Vieux Port"/>
+                        <figcaption>Vieux Port</figcaption>
+                    </figure>
+
+                    <figure class="children2">
+                        <img src="body/activites/2.jpg" alt="photo Fort de Pomègues"/>
+                        <figcaption>Fort de Pomègues</figcaption>
+                    </figure>
+
+                    <figure class="children2">
+                        <img src="body/activites/3.jpg" alt="photo Îles de Frioul"/>
+                        <figcaption>Îles de Frioul</figcaption>
+                    </figure>
+
+                    <figure class="children2">
+                        <img src="body/activites/4.jpg" alt="photo Parc National des Calanques"/>
+                        <figcaption>Parc National des Calanques</figcaption>
+                    </figure>
+
+                    <figure class="children2">
+                        <img src="body/activites/5.jpg" alt="photo Notre-Dame-de-la-Garde"/>
+                        <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                    </figure>
+
+                    <figure class="children2">
+                        <img src="body/activites/6.jpg" alt="photo Parc Longchamp"/>
+                        <figcaption>Parc Longchamp</figcaption>
+                    </figure>
+                </div>
+            
 
             <!-- Footer -->
             <footer>
@@ -187,10 +188,8 @@
 
                 <div id="Assitance">
                     <h1>Assitance</h1>
-                    <div id="listes_amis">
-                        <p>Centre d'aide</p>
-                        <p>Nous contacter</p>
-                    </div>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
                 </div>
             </footer>
         </div>
