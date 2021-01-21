@@ -1,0 +1,85 @@
+ #bloc_page
+ {
+     font-family: 'Raleway', sans-serif;
+ }
+
+
+/*header vide pour l'instant*/
+
+nav
+{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+
+section
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+}
+
+#conteneur
+{
+    width: 60%;
+}
+
+#conteneur1
+{
+    width: 20%;
+}
+
+#activites 
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+figure {
+   
+    box-shadow: 0px 2px 5px whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+  
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    box-shadow: 0px 2px 5px whitesmoke;
+    border-radius: 20px;
+}
+
+figcaption {
+    color: #000;
+    font: normal 'Raleway';
+    font-weight: 700;
+    box-shadow: 0px 2px 5px whitesmoke;
+    border-radius: 20px;
+    height: 40px;
+    padding: 5px;
+
+}
+
+
+/*footer*/
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
