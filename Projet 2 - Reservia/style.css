@@ -1,85 +1,274 @@
- #bloc_page
+/*body*/
+body
  {
      font-family: 'Raleway', sans-serif;
+     font-size: 0.9em;
+    
  }
 
-
-/*header vide pour l'instant*/
-
-nav
+#bloc_page
 {
-    position: absolute;
-    top: 5px;
-    right: 0px;
+    width: 1230px;
+    margin: auto;
 }
 
-ul
+ /*barre de navigation*/
+
+#conteneur_navbar
 {
-    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+ 
+ .imageflottante
+ {
+     float: left;
+     width: 90px;
+     height: 50px;
+     margin-right: 10px;
+ }
+
+ .navbar
+ {
+    padding: 0px;
     display: flex;
-    
+    width: 100%;
+    margin: 0px;
+ }
+
+ .navbar li 
+ {
+     list-style: none;
+ }
+
+ .navbar li a
+ {
+     padding: 20px;
+     color: black;
+     display: block;
+     text-decoration: none;
+ }
+
+ .navbar li a:hover
+{
+    padding: 10px;
+    text-decoration: overline;
+    color: #0065FC;
 }
 
+span
+{
+    font-weight: 700;
+    color: #0065FC;
+}
 
+strong
+{
+    font-size: 1.35em;
+}
+
+header p
+{
+   line-height: 1.5; 
+}
+
+/*barre de recherche*/
+
+form
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 0.3rem;
+    width: 328px;   
+    height: auto;
+    display: flex;
+}
+
+.recherche-barr
+{
+    margin-bottom: auto;
+    margin-top: auto;
+    border: none;
+    font-weight: 700;
+}
+
+.recherche-input
+{
+    background-color:  #0065FC;
+    color: white;
+    border: none;
+    
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    border-radius: 0.3rem;
+    font-weight: 700;
+}
+
+form i
+{ 
+    padding: 0.5rem 1rem;
+    font-size: 1.15rem;
+    border-radius: 0.3rem;
+    color: black;
+    background-color: #F2F2F2;  
+}
+
+/*filtres*/
+
+.filtres-conteneur
+{
+    display: inline-flex;
+}
+
+.filtres
+{
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+.filtres li
+{
+    list-style: none;
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    font-weight: 700;
+    padding-right: 9px;
+}
+
+#fil
+{
+    padding: 3px;
+    font-weight: 700;
+}
+
+li i
+{
+    border: 1px solid #DEEBFF;
+    border-radius: 20px;
+    background-color: #DEEBFF ;
+    padding: 7px;
+    color: #0065FC;
+}
+
+/*sections 1*/
 section
 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: #F2F2F2;
+}
+
+/*hebergements*/
+#parent img 
+{
+    border-radius: 8px;
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
 }
 
 #conteneur
 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.children
+{
+    border: 10px solid white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+    line-height: 7px;
+    background-color: white;
+    margin: 10px;
+}
+
+.children h2
+{
+    font-size: 1.1em;
+}
+
+#parent
+{
+    background-color: #F2F2F2 ;
     width: 60%;
+    height: auto;
+    padding: 10px;
+}
+
+/*populaires*/
+#parent1 img 
+{
+    border-radius: 8px;
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
 }
 
 #conteneur1
 {
-    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
 }
 
-#activites 
+.children1
 {
+    border: 10px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
     display: flex;
-    flex-flow: row wrap;
+    width:300px;
+    line-height: inherit;
 }
 
-figure {
-   
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-  
-    max-width: 220px;
-    margin: auto;
+.children1 figure
+{
+    margin-inline: auto;
+    margin-block: auto;
 }
 
-img {
-    max-width: 250px;
-    max-height: 250px;
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
+.children1 h2
+{
+    font-size: 1.1em;
+    
 }
 
-figcaption {
-    color: #000;
-    font: normal 'Raleway';
-    font-weight: 700;
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
-    height: 40px;
-    padding: 5px;
-
+#parent1
+{
+    width: 30%;
+    margin-left: 5%;
+    background-color: #F2F2F2;
 }
 
+/*activités*/
 
 /*footer*/
 footer
 {
-    background-color: #F2F2F2;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: baseline;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.children2
+{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+/*breakpoints*/
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) 
+{
+
 }
