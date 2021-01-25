@@ -1,85 +1,274 @@
- #bloc_page
- {
-     font-family: 'Raleway', sans-serif;
- }
-
-
-/*header vide pour l'instant*/
-
-nav
+/*Body intégral*/
+body
 {
-    position: absolute;
-    top: 5px;
-    right: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
-ul
+
+#bloc_page
 {
-    list-style-type: none;
+    width: 100%;
+    margin: auto;
+}
+
+/*barre de navigation*/
+#menu
+{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+ 
+.imageflottante
+{
+    float: left;
+    width: 90%;
+}
+
+.navbar
+{
     display: flex;
-    
+    margin: 0%;
 }
 
+.navbar li 
+{
+    list-style: none;
+}
 
+.navbar li a
+{
+    padding: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar li a:hover
+{
+    border-top: 1px solid #0065FC; 
+    color: #0065FC;
+}
+
+span
+{
+    font-weight: 700;
+    color: #0065FC;
+}
+
+strong
+{
+    font-size: 1.3em;
+}
+
+header p
+{
+   line-height: 1.5; 
+}
+
+/*barre de recherche*/
+.recherche-input
+{
+    background-color:  #0065FC;
+    color: white;
+    border: none;
+    
+    padding: 0.5rem 1rem;
+    line-height: 1.55;
+    font-weight: 700;
+}
+
+/*filtres*/
+
+.filtres-conteneur
+{
+    display: inline-flex;
+}
+
+.filtres
+{
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+.filtres li
+{
+    margin: 12px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    font-weight: 700;
+    padding-right: 9px;
+}
+
+#fil
+{
+    padding: 3px;
+    font-weight: 700;
+}
+
+li i
+{
+    border: 1px solid #DEEBFF;
+    border-radius: 20px;
+    background-color: #DEEBFF ;
+    padding: 7px;
+    color: #0065FC;
+}
+
+/*sections 1*/
 section
 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: #F2F2F2;
+}
+
+/*hebergements*/
+#parent img 
+{
+    border-radius: 8px;
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
 }
 
 #conteneur
 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.children
+{
+    border: 10px solid white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+    line-height: 7px;
+    background-color: white;
+    margin: 10px;
+}
+
+.children h2
+{
+    font-size: 1.1em;
+}
+
+#parent
+{
+    background-color: #F2F2F2 ;
     width: 60%;
+    height: auto;
+    padding: 10px;
+}
+
+/*populaires*/
+#parent1 img 
+{
+    border-radius: 8px;
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
 }
 
 #conteneur1
 {
-    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
 }
 
-#activites 
+.children1
+{
+    border: 10px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    width:300px;
+    line-height: inherit;
+}
+
+.children1 figure
+{
+    margin-inline: auto;
+    margin-block: auto;
+}
+
+.children1 h2
+{
+    font-size: 1.1em;
+    
+}
+
+#parent1
+{
+    width: 30%;
+    margin-left: 5%;
+    background-color: #F2F2F2;
+}
+
+/*activités*/
+#activites
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column ;
 }
 
-figure {
-   
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
+#conteneur2
+{
+   display: flex; 
+}
+
+.children2
+{
     display: flex;
-    flex-flow: column;
-  
-    max-width: 220px;
-    margin: auto;
+    flex-flow: column wrap;
+    max-width: 25%;
 }
 
-img {
-    max-width: 250px;
-    max-height: 250px;
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
+
+.children2 img
+{
+    width: 100%;
+    height: auto;
 }
 
-figcaption {
-    color: #000;
-    font: normal 'Raleway';
-    font-weight: 700;
-    box-shadow: 0px 2px 5px whitesmoke;
-    border-radius: 20px;
-    height: 40px;
-    padding: 5px;
-
+.images1
+{
+    border-radius: 8px;
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
 }
 
 
 /*footer*/
-footer
+#conteneur3
 {
-    background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 25%;
+    background-color: #F2F2F2;
+}
+
+.children3
+{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.children3 p
+{
+   line-height: 2;
+}
+
+/*breakpoints*/
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) 
+{
+
 }
