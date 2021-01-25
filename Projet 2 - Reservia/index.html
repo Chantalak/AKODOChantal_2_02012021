@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
     <head>
         <meta charset="utf-8" />
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="style.css" />
-        <title> Reservia </title>    
-       
+        
+        <title>Reservia</title>    
     </head>
 
     <body>
         <div id="bloc_page">
-            <div class="padding">
+            
                 <!-- Header -->
                 <header>
-                    <div id="conteneur_navbar">
+                    <div id="menu">
                         <p>
                             <img src="head/Reservia.svg" class="imageflottante" alt="logo Reservia"/>
                         </p>
-                        <nav class="navbar-conteneur">
+
+                        <nav>
                             <ul class="navbar">
                                 <li><a href="#ancre_hebergements">Hébergements</a></li>
                                 <li><a href="#ancre_activites">Activités</a></li>
-                                <li><a href="#"><span>S'inscrire</span></a></li>
-                                <!--Vérifier avec Océane pour les ancres-->
+                                <li><a href="#"><span>S'inscrire</span></a></li>                   
                             </ul>
                         </nav>
                     </div>
@@ -33,15 +33,10 @@
                     <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong><br />
                     En plein centre ville ou en pleine nature</p>
                     
-                    <div class="recherche_p">
-                        <form method="post" action="traitement.php">
-                            <div >
-                                <i class="fas fa-map-marker-alt"></i>
-                                <label for="search"></label>
-                                <input class="recherche-barr" type="search" value="Marseille, France"/>
-                                <input class="recherche-input" type="submit" value="Rechercher" />
-                            </div>
-                        </form>
+                    <div class="recherche"></div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input class="recherche-barr" type="search" value="Marseille, France"/>
+                        <input class="recherche-input" type="submit" value="Rechercher" />        
                     </div>
 
                     <div class="filtres-conteneur">
@@ -160,44 +155,32 @@
                     <h2>Activités à Marseille</h2>
 
                     <div id="conteneur2">
-                        <div class="children2">
-                            <figure>
-                                <img class="object-fit" src="body/activites/1.jpg" alt="photo Vieux Port"/>
-                                <figcaption>Vieux Port</figcaption>
-                            </figure>
+                        <div class="children2" >
+                            <p><img class="images1" src="body/activites/1.jpg" alt="photo Vieux Port"/><br />
+                            <strong>Vieux Port</strong></p>
                         </div>
 
                         <div class="children2">
-                            <figure>
-                                <img src="body/activites/2.jpg" alt="photo Fort de Pomègues"/>
-                                <figcaption>Fort de Pomègues</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="body/activites/3.jpg" alt="photo Îles de Frioul"/>
-                                <figcaption>Îles de Frioul</figcaption>
-                            </figure>
+                            <p><img class="images2" src="body/activites/2.jpg" alt="photo Fort de Pomègues"/><br />
+                            <strong>Fort de Pomègues</strong></p>
+                            <p><img class="images2" src="body/activites/3.jpg" alt="photo Îles de Frioul"/><br />
+                            <strong>Îles de Frioul</strong></p>
+                        </div>
+
+                        <div class="children2">  
+                            <p><img class="images1" src="body/activites/4.jpg" alt="photo Parc National des Calanques"/><br />
+                            <strong>Parc National des Calanques</strong></p>   
                         </div>
 
                         <div class="children2">
-                            <figure>
-                                <img src="body/activites/4.jpg" alt="photo Parc National des Calanques"/>
-                                <figcaption>Parc National des Calanques</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="children2">
-                            <figure>
-                                <img src="body/activites/5.jpg" alt="photo Notre-Dame-de-la-Garde"/>
-                                <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="body/activites/6.jpg" alt="photo Parc Longchamp"/>
-                                <figcaption>Parc Longchamp</figcaption>
-                            </figure>
+                            <p><img class="images2" src="body/activites/5.jpg" alt="photo Notre-Dame-de-la-Garde"/><br />
+                            <strong>Notre-Dame-de-la-Garde</strong></p>
+                            <p><img class="images2" src="body/activites/6.jpg" alt="photo Parc Longchamp"/><br />
+                            <strong>Parc Longchamp</strong></p>
                         </div>
                     </div>
                 </section>
-            </div>
+            
             
             <!-- Footer -->
             <footer id="conteneur3">
@@ -221,6 +204,7 @@
 
         </div>
 
+    
     </body>
 
     <script src="https://kit.fontawesome.com/fa75e0dafd.js" crossorigin="anonymous"></script>
