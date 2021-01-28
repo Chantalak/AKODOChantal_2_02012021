@@ -2,23 +2,23 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-}
-
-
-#bloc_page
-{
-    width: 100%;
-    margin: auto;
+    
 }
 
 /*barre de navigation*/
+
+header
+{
+    padding: 0% 2% 1% 2%;
+}
+
 #menu
 {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
 }
- 
+
 .imageflottante
 {
     float: left;
@@ -50,7 +50,7 @@ body
     color: #0065FC;
 }
 
-span
+.inscrit
 {
     font-weight: 700;
     color: #0065FC;
@@ -67,12 +67,25 @@ header p
 }
 
 /*barre de recherche*/
+.recherche
+{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-color: 1px solid gray;
+}
+
+.recherche i
+{
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
 .recherche-input
 {
     background-color:  #0065FC;
     color: white;
     border: none;
-    
     padding: 0.5rem 1rem;
     line-height: 1.55;
     font-weight: 700;
@@ -95,7 +108,7 @@ header p
 
 .filtres li
 {
-    margin: 12px;
+    margin: 14px;
     display: block;
     text-decoration: none;
     border: 1px solid #F2F2F2;
@@ -123,6 +136,12 @@ li i
 section
 {
     display: flex;
+    padding: 0% 2% 1% 2%;
+}
+
+aside
+{
+    border-radius: 8px;
 }
 
 /*hebergements*/
@@ -159,7 +178,7 @@ section
 #parent
 {
     background-color: #F2F2F2 ;
-    width: 60%;
+    width: 70%;
     height: auto;
     padding: 10px;
 }
@@ -169,7 +188,7 @@ section
 {
     border-radius: 8px;
     width: 150px;
-    height: 110px;
+    height: 120px;
     object-fit: cover;
 }
 
@@ -187,7 +206,6 @@ section
     background-color: white;
     margin: 10px;
     display: flex;
-    width:300px;
     line-height: inherit;
 }
 
@@ -203,54 +221,105 @@ section
     
 }
 
+.children1 figcaption
+{
+    padding-left: 2%;
+    line-height: 1;
+}
+
 #parent1
 {
     width: 30%;
-    margin-left: 5%;
+    margin-left: 2%;
     background-color: #F2F2F2;
 }
 
 /*activités*/
 #activites
 {
+    padding: 0% 2% 1% 2%;
     display: flex;
     flex-direction: column ;
 }
 
 #conteneur2
 {
-   display: flex; 
+    display: flex;
 }
 
 .children2
-{
+{   
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     max-width: 25%;
 }
 
+.children2 figcaption
+{
+    padding: 2%;
+    line-height: 2;
+}
+
+.children2 figure
+{
+    margin: 3%;
+    border-radius: 25px;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.438)
+}
 
 .children2 img
 {
-    width: 100%;
-    height: auto;
+    border-radius: 25px 25px 0px 0px;
 }
 
-.images1
+.images1 
 {
-    border-radius: 8px;
-    width: 200px;
-    height: 110px;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 
+.images2
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.images3
+{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.images4
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.images5
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.images6
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
 /*footer*/
 #conteneur3
 {
     display: flex;
     justify-content: space-between;
-    padding-left: 4%;
+    padding-left: 2%;
     padding-right: 25%;
     background-color: #F2F2F2;
 }
