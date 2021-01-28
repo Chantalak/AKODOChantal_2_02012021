@@ -2,16 +2,15 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    
 }
 
-/*barre de navigation*/
-
+/*header*/
 header
 {
     padding: 0% 2% 1% 2%;
 }
 
+/*menu + logo*/
 #menu
 {
     display: inline-flex;
@@ -19,11 +18,15 @@ header
     width: 100%;
 }
 
+/*logo*/
 .imageflottante
 {
     float: left;
     width: 90%;
 }
+
+/*menu*/
+
 
 .navbar
 {
@@ -38,16 +41,10 @@ header
 
 .navbar li a
 {
-    padding: 20px;
+    padding: 30px;
     color: black;
     display: block;
     text-decoration: none;
-}
-
-.navbar li a:hover
-{
-    border-top: 1px solid #0065FC; 
-    color: #0065FC;
 }
 
 .inscrit
@@ -56,14 +53,16 @@ header
     color: #0065FC;
 }
 
-strong
+.navbar li a:hover
 {
-    font-size: 1.3em;
+    border-top: 1px solid #0065FC; 
+    color: #0065FC;
 }
 
-header p
+/*titre et paragraphe*/
+h1
 {
-   line-height: 1.5; 
+    font-size: 1.2em;
 }
 
 /*barre de recherche*/
@@ -72,37 +71,53 @@ header p
     display: flex;
     height: 50px;
     width: 100%;
-    border-color: 1px solid gray;
 }
 
 .recherche i
 {
     background-color: #f2f2f2;
+    width: 15px;
     padding: 15px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.recherche-input
+.search 
+{
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    border: 0.5px solid #f2f2f2;
+    padding-left: 1%;
+}
+
+.recherche button
 {
     background-color:  #0065FC;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    line-height: 1.55;
+    padding: 0.5rem 1.5rem;
     font-weight: 700;
+    font-size: 0.9em;
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*filtres*/
-
 .filtres-conteneur
 {
     display: inline-flex;
+}
+
+#fil
+{
+    padding: 10px;
+    font-weight: 700;
 }
 
 .filtres
 {
     padding: 0px;
     display: flex;
-    width: 100%;
     margin: 0px;
 }
 
@@ -110,30 +125,59 @@ header p
 {
     margin: 14px;
     display: block;
-    text-decoration: none;
-    border: 1px solid #F2F2F2;
+    border: 0.5px solid #F2F2F2;
     border-radius: 20px;
     font-weight: 700;
-    padding-right: 9px;
+    padding-right: 15px;
 }
 
-#fil
+.filtres li a
 {
-    padding: 3px;
-    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    
 }
 
-li i
+.filtres li i
 {
-    border: 1px solid #DEEBFF;
+    border: 0.5px solid #DEEBFF;
     border-radius: 20px;
     background-color: #DEEBFF ;
-    padding: 7px;
+    padding: 12px;
     color: #0065FC;
 }
 
-/*sections 1*/
-section
+.filtres li:hover
+{
+    background-color: #DEEBFF;
+}
+
+/*info*/
+.info
+{
+    display: flex;
+    margin: 0.5%;
+}
+
+.styled
+{
+    border-radius: 20px;
+    height: 5%;
+    border: 0.5px solid #DEEBFF;
+    background-color: white;
+    color:  #0065FC;
+}
+
+.info p
+{
+    padding-left: 1%;
+    margin-top: 0%;
+}
+
+/*Sections*/
+
+/*sections I*/
+#bloc
 {
     display: flex;
     padding: 0% 2% 1% 2%;
@@ -141,16 +185,40 @@ section
 
 aside
 {
-    border-radius: 8px;
+    border-radius: 20px;
+}
+
+h2
+{
+    padding-left: 3%;
+    font-size: 1.5em;
+}
+
+figcaption i
+{
+    color: #0065FC;
 }
 
 /*hebergements*/
-#parent img 
+#parent
 {
-    border-radius: 8px;
-    width: 200px;
-    height: 110px;
+    background-color: #F2F2F2 ;
+    width: 70%;
+    padding: 20px;
+}
+
+#parent img 
+{   
+    width: 230px;
+    height: 125px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#conteneur a
+{
+    color: black;
+    text-decoration: none;
 }
 
 #conteneur
@@ -162,76 +230,87 @@ aside
 
 .children
 {
-    border: 10px solid white;
+    border: 3px solid white;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px gray;
+    box-shadow: 1px 1px 20px 1px grey;
     line-height: 7px;
     background-color: white;
     margin: 10px;
 }
 
-.children h2
+.children figcaption
 {
-    font-size: 1.1em;
+    padding: 0px 0px 5px 10px;
 }
 
-#parent
+.stars
 {
-    background-color: #F2F2F2 ;
-    width: 70%;
-    height: auto;
-    padding: 10px;
+    display: flex;
+}
+
+.plus
+{
+    font-weight: 700;
+    font-size: 1.3em;
+    padding-left: 3%;
+    margin-bottom: 0%;
 }
 
 /*populaires*/
+#parent1
+{
+    padding: 20px;
+    width: 30%;
+    margin-left: 2%;
+    background-color: #F2F2F2;
+}
+
 #parent1 img 
 {
-    border-radius: 8px;
-    width: 150px;
-    height: 120px;
+    border-radius: 20px 0 0 20px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
+}
+
+.populaire
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaire i
+{
+    font-size: 1.5em;
+    text-align: center;
+    height: auto;
 }
 
 #conteneur1
 {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;  
 }
 
 .children1
 {
-    border: 10px solid white;
+    display: flex;
+    border: 3px solid white;
     border-radius: 20px;
+    box-shadow: 1px 1px 20px 1px grey;
     background-color: white;
     margin: 10px;
-    display: flex;
-    line-height: inherit;
-}
-
-.children1 figure
-{
-    margin-inline: auto;
-    margin-block: auto;
-}
-
-.children1 h2
-{
-    font-size: 1.1em;
-    
 }
 
 .children1 figcaption
 {
-    padding-left: 2%;
+    padding-left: 5%;
     line-height: 1;
 }
 
-#parent1
+.stars1
 {
-    width: 30%;
-    margin-left: 2%;
-    background-color: #F2F2F2;
+    display: flex;
 }
 
 /*activités*/
