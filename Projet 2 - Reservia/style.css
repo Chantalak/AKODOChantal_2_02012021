@@ -2,6 +2,14 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+#bloc_page
+{
+    
+    max-width: 1920px;
+    margin: auto;
 }
 
 /*header*/
@@ -22,16 +30,18 @@ header
 .imageflottante
 {
     float: left;
-    width: 90%;
+    width: 100%;
 }
 
 /*menu*/
-
-
 .navbar
 {
     display: flex;
-    margin: 0%;
+}
+
+.bar ul
+{
+    display: flex;
 }
 
 .navbar li 
@@ -47,13 +57,21 @@ header
     text-decoration: none;
 }
 
-.inscrit
+.ins
 {
     font-weight: 700;
     color: #0065FC;
+    text-decoration: none;
 }
 
-.navbar li a:hover
+a.ins
+{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav:hover
 {
     border-top: 1px solid #0065FC; 
     color: #0065FC;
@@ -118,6 +136,7 @@ h1
 {
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0px;
 }
 
@@ -330,18 +349,26 @@ figcaption i
 {   
     display: flex;
     flex-flow: row wrap;
-    max-width: 25%;
+    width: 100%;
+}
+
+.children2 a
+{
+    text-decoration: none;
+    color: black;
+    width: 100%;
 }
 
 .children2 figcaption
 {
-    padding: 2%;
+    font-weight: 700;
+    padding: 4%;
     line-height: 2;
 }
 
 .children2 figure
 {
-    margin: 3%;
+    margin: 4%;
     border-radius: 25px;
     box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.438)
 }
@@ -354,14 +381,14 @@ figcaption i
 .images1 
 {
     width: 100%;
-    height: 400px;
+    height: 410px;
     object-fit: cover;
 }
 
 .images2
 {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
 }
 
@@ -375,21 +402,21 @@ figcaption i
 .images4
 {
     width: 100%;
-    height: 400px;
+    height: 410px;
     object-fit: cover;
 }
 
 .images5
 {
     width: 100%;
-    height: 150px;
+    height: 120px;
     object-fit: cover;
 }
 
 .images6
 {
     width: 100%;
-    height: 150px;
+    height: 190px;
     object-fit: cover;
 }
 
@@ -415,8 +442,183 @@ figcaption i
 }
 
 /*breakpoints*/
-
-@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) 
+@media (min-width: 576px) and (max-width: 1200px)
 {
+     /*body*/
+    * 
+    {
+        box-sizing: border-box;
+	}
 
+    body 
+    {
+		width: auto;
+		margin: 0;
+		padding: 0;
+    }
+
+    /*Section 1*/
+    #parent
+    {
+        width: 60%;
+    }
+
+    #parent1
+    {
+        width: 40%;
+    }
+   
+    /*activités*/
+    #conteneur2
+    {
+        display: block;
+    }
+
+    .children2
+    {
+        height: 100%;
+    }
+
+    .children2 img
+    {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .children2 figcaption
+    {
+        padding: 2%;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 780px)
+{
+    /*body*/
+    * 
+    {
+        box-sizing: border-box;
+	}
+
+    body 
+    {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+    /*header*/
+   
+
+    /*logo*/
+    .imageflottante
+    {
+        position: absolute;
+        top: 7%;
+        width: 25%;
+    }
+
+    /*menu*/
+    #menu
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar
+    {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        
+    }
+
+    .bar
+    {
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .bar ul
+    {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .bar li a:hover
+    {
+        border-top: none;
+        
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .ins
+    {
+        float: right;
+    }
+    
+    /*section 1*/
+    #bloc
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*hebergments*/
+    #conteneur a
+    {
+        width: 100%;
+    }
+
+    #parent
+    {
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    #parent img
+    {
+        width: 100%;
+        margin: 0%;
+    }
+
+    /*populaires*/
+    #parent1
+    {
+        width: 100%;
+        margin: 0%;
+    }
+
+    
+    /*activités*/
+    #conteneur2
+    {
+        display: block;
+    }
+
+    .children2
+    {
+        height: 100%;
+    }
+
+    .children2 img
+    {
+        width: 100%;
+        height: 190px;
+    }
+
+    .children2 figcaption
+    {
+        padding: 1%;
+    }
+
+    /*footer*/
+    #conteneur3
+    {
+        flex-direction: column;
+    }
+
+    .children3
+    {
+        padding: 0%;
+        line-height: 1;
+    }
 }
