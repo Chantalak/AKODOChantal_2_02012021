@@ -3,13 +3,13 @@ body
 {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin: 0%;
 }
 
 #bloc_page
 {
     
     max-width: 1920px;
-    margin: auto;
 }
 
 /*header*/
@@ -29,8 +29,10 @@ header
 /*logo*/
 .imageflottante
 {
-    float: left;
-    width: 100%;
+    position: absolute;
+    top: 5%;
+    width: 120px;
+    height: 56px;
 }
 
 /*menu*/
@@ -118,6 +120,12 @@ h1
     font-size: 0.9em;
     border-radius: 0px 20px 20px 0px;
     font-family: 'Raleway', sans-serif;
+}
+
+/*seconde barre de recherche*/
+.recherchebis
+{
+    display: none;
 }
 
 /*filtres*/
@@ -442,7 +450,9 @@ figcaption i
 }
 
 /*breakpoints*/
-@media (min-width: 576px) and (max-width: 1200px)
+
+
+@media (max-width: 991.98px) 
 {
      /*body*/
     * 
@@ -492,7 +502,7 @@ figcaption i
 }
 
 
-@media (min-width: 375px) and (max-width: 780px)
+@media (min-width: 376px) and (max-width: 575.98px) 
 {
     /*body*/
     * 
@@ -502,21 +512,12 @@ figcaption i
 
     body 
     {
-		width: auto;
+		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
 
     /*header*/
-   
-
-    /*logo*/
-    .imageflottante
-    {
-        position: absolute;
-        top: 7%;
-        width: 25%;
-    }
 
     /*menu*/
     #menu
@@ -525,28 +526,40 @@ figcaption i
         width: 100%;
     }
 
+    .imageflottante
+    {
+        position: absolute;
+        left: 10%;
+    }
+
     .navbar
     {
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        
     }
 
-    .bar
+    .navbar p
     {
-        border-bottom: 3px solid #F2F2F2;
+        margin: 0%;
     }
 
     .bar ul
     {
         margin: 0px;
-        width: 100%;
+        padding: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-end;
+    }
+
+    .bar li a
+    {
+        border-bottom: 3px solid #F2F2F2;
     }
 
     .bar li a:hover
     {
         border-top: none;
-        
         border-bottom: 3px solid #0065FC;
     }
 
@@ -560,6 +573,17 @@ figcaption i
     {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    /*barre de recherche*/
+    .recherche
+    {
+        display: none;
+    }
+
+    .recherchebis
+    {
+
     }
 
     /*hebergments*/
