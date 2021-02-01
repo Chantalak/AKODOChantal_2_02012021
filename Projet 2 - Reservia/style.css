@@ -451,57 +451,6 @@ figcaption i
 
 /*breakpoints*/
 
-
-@media (max-width: 991.98px) 
-{
-     /*body*/
-    * 
-    {
-        box-sizing: border-box;
-	}
-
-    body 
-    {
-		width: auto;
-		margin: 0;
-		padding: 0;
-    }
-
-    /*Section 1*/
-    #parent
-    {
-        width: 60%;
-    }
-
-    #parent1
-    {
-        width: 40%;
-    }
-   
-    /*activités*/
-    #conteneur2
-    {
-        display: block;
-    }
-
-    .children2
-    {
-        height: 100%;
-    }
-
-    .children2 img
-    {
-        width: 100%;
-        height: 200px;
-    }
-    
-    .children2 figcaption
-    {
-        padding: 2%;
-    }
-}
-
-
 @media (min-width: 376px) and (max-width: 575.98px) 
 {
     /*body*/
@@ -578,8 +527,7 @@ figcaption i
 
     .ins
     {
-        float: right;
-        
+        float: right;  
     }
 
     h1
@@ -645,9 +593,60 @@ figcaption i
     }
 
     /*hebergments*/
-    #conteneur a
+ 
+    /*populaires*/
+
+    
+    /*activités*/
+    #conteneur2
+    {
+        display: block;
+    }
+
+    .children2
     {
         width: 100%;
+    }
+
+    /*footer*/
+    #conteneur3
+    {
+        flex-direction: column;
+    }
+
+    .children3
+    {
+        padding: 0%;
+        line-height: 1;
+    }
+}
+
+@media (min-width:576px) and (max-width: 991.98px) 
+{
+     /*body*/
+    * 
+    {
+        box-sizing: border-box;
+	}
+
+    body 
+    {
+		width: auto;
+		margin: 0%;
+		padding: 0;
+    }
+
+    /*section 1*/
+    #bloc
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*hebergments*/
+    #conteneur a
+    {
+        width: 50%;
     }
 
     #parent
@@ -666,41 +665,55 @@ figcaption i
     #parent1
     {
         width: 100%;
-        margin: 0%;
     }
 
-    
+    #conteneur1
+    {
+        height: 300px;
+    }
+
+    .children1
+    {  
+        flex-direction: column;
+        width: 30%;
+        height: 300px;
+    }
+
+    #conteneur1 img
+    {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
     /*activités*/
     #conteneur2
     {
-        display: block;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .children2
     {
-        height: 100%;
+        width: 50%;
     }
 
     .children2 img
     {
         width: 100%;
-        height: 190px;
+        
     }
 
     .children2 figcaption
     {
-        padding: 1%;
+        padding: 2%;
     }
 
     /*footer*/
     #conteneur3
     {
-        flex-direction: column;
-    }
-
-    .children3
-    {
+        display: flex;
         padding: 0%;
-        line-height: 1;
+        justify-content: space-around;
     }
 }
