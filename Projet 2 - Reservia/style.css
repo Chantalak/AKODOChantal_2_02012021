@@ -588,6 +588,13 @@ figcaption i
         font-size: 1.5em;
     }
 
+    /*filtres*/
+    .filtres-conteneur
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
     /*barre de recherche*/
     .recherche
     {
