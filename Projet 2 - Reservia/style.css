@@ -696,6 +696,7 @@ figcaption i
     #parent1
     {
         width: 100%;
+        margin-left: 0%;
     }
 
     #conteneur1
@@ -746,5 +747,60 @@ figcaption i
         display: flex;
         padding: 0%;
         justify-content: space-around;
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1374.98px)
+{
+    /*section 1*/
+    #bloc
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+      /*hebergments*/
+    #conteneur a
+    {
+        display: block;
+    }
+
+    #parent
+    {
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    #parent img
+    {
+        width: 100%;
+        margin: 0%;
+    }
+
+    /*populaires*/
+    #parent1
+    {
+        width: 95%;
+        margin: 2%;
+    }
+
+    #conteneur1
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .children1
+    {  
+        flex-direction: column;
+        width: 30%;
+        height: 300px;
+    }
+
+    #conteneur1 img
+    {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
     }
 }
