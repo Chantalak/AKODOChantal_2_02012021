@@ -794,8 +794,7 @@ figcaption i
     .children1
     {  
         flex-direction: column;
-        width: 30%;
-        height: 300px;
+        width: 25%;
     }
 
     #conteneur1 img
