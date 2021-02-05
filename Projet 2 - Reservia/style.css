@@ -30,7 +30,6 @@ header
 .imageflottante
 {
     position: absolute;
-    top: 5%;
     width: 120px;
     height: 56px;
 }
@@ -44,6 +43,7 @@ header
 .bar ul
 {
     display: flex;
+    margin: 2%;
 }
 
 .navbar li 
@@ -70,7 +70,7 @@ a.ins
 {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 21px;
 }
 
 .nav:hover
@@ -452,25 +452,26 @@ figcaption i
 
 /*breakpoints*/
 
-@media (min-width: 376px) and (max-width: 705px) 
+@media (min-width: 300px) and (max-width: 768px) 
 {
     /*body*/
     * 
     {
         box-sizing: border-box;
-	}
+    }
 
     body 
     {
 		width: 100%;
-		margin: 0;
-		padding: 0;
+        margin: 0;
+        padding: 0%;
 	}
 
     /*header*/
     header
     {
         font-size: 1.2em;
+        padding: 0%;
     }
 
     /*menu*/
@@ -478,12 +479,12 @@ figcaption i
     {
         display: block;
         width: 100%;
+        padding: 0%;
     }
 
     .imageflottante
     {
         position: absolute;
-        left: 5%;
     }
 
     .navbar
@@ -535,13 +536,49 @@ figcaption i
     {
         margin-top: 30px;
         font-size: 1.5em;
+        padding-left: 5%;
+    }
+
+    header p
+    {
+        padding-left: 5%;
     }
 
     /*filtres*/
+    #fil
+    {
+        margin-bottom: 0%;
+    }
+
     .filtres-conteneur
     {
         display: flex;
         flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .filtres li
+    {
+        border-radius: 40px;
+        border: 3px solid #F2F2F2;
+    }
+
+    .filtres li i
+    {
+        width: 57px;
+        padding: 18px;
+        border-radius: 40px;
+    }
+
+    .info
+    {
+        padding: 5%;
+    }
+
+    .info p
+    {
+        margin: 0%;
+        padding-left: 3%;
     }
 
     /*barre de recherche*/
@@ -557,13 +594,15 @@ figcaption i
         display: flex;
         align-items: center;
         font-size: 1.2em;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .recherchebis #fas1
     {
         background-color: #F2F2F2;
         border-radius: 20px 0 0 20px;
-        padding: 5.4%;
+        padding: 23px;
     }   
 
     .search
@@ -573,7 +612,7 @@ figcaption i
         font-weight: 700;
         font-size: 0.9em;
         font-family: 'Raleway', sans-serif;
-        padding: 5%;
+        padding: 20px;
     }
 
     .recherchebis #fas2
@@ -582,7 +621,7 @@ figcaption i
         font-size: 1em;
         color: white;
         border: none;
-        padding: 5%;
+        padding: 21px;
         border-radius: 20px;
     }
 
@@ -591,6 +630,7 @@ figcaption i
     {
         display: flex;
         flex-direction: column-reverse;
+        padding: 0%;
     }
 
     /*hebergments*/
@@ -612,13 +652,20 @@ figcaption i
     }
 
     /*populaires*/
+
     #parent1
     {
         width: 100%;
         margin: 0%;
+        border-radius: 0%;
     }
     
-  /*activités*/
+    /*activités*/
+    #activites
+    {
+        padding: 0%;
+    }
+    
     #conteneur2
     {
         display: block;
@@ -643,6 +690,7 @@ figcaption i
     #conteneur3
     {
         flex-direction: column;
+        padding-left: 5%;
     }
 
     .children3
@@ -652,7 +700,7 @@ figcaption i
     }
 }
 
-@media (min-width: 705px) and (max-width: 992px) 
+@media (min-width: 768px) and (max-width: 992px) 
 {
      /*body*/
     * 
@@ -750,7 +798,7 @@ figcaption i
     }
 }
 
-@media (min-width: 992px) and (max-width: 1405px)
+@media (min-width: 992px) and (max-width: 1205px)
 {
     /*hébergements*/
     #conteneur a
