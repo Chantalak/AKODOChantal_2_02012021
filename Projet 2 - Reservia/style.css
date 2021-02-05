@@ -167,6 +167,8 @@ h1
 
 .filtres li i
 {
+    width: 15px;
+    text-align: center;
     border: 0.5px solid #DEEBFF;
     border-radius: 20px;
     background-color: #DEEBFF ;
