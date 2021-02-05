@@ -261,7 +261,7 @@ figcaption i
     border: 3px solid white;
     border-radius: 20px;
     box-shadow: 1px 1px 20px 1px grey;
-    line-height: 7px;
+    line-height: 1em;
     background-color: white;
     margin: 10px;
 }
@@ -452,7 +452,7 @@ figcaption i
 
 /*breakpoints*/
 
-@media (min-width: 376px) and (max-width: 575.98px) 
+@media (min-width: 376px) and (max-width: 705px) 
 {
     /*body*/
     * 
@@ -652,7 +652,7 @@ figcaption i
     }
 }
 
-@media (min-width: 575.98px) and (max-width: 991.98px) 
+@media (min-width: 705px) and (max-width: 992px) 
 {
      /*body*/
     * 
@@ -750,54 +750,22 @@ figcaption i
     }
 }
 
-@media (min-width: 991.98px) and (max-width: 1374.98px)
+@media (min-width: 992px) and (max-width: 1405px)
 {
-    /*section 1*/
-    #bloc
-    {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-      /*hebergments*/
+    /*hébergements*/
     #conteneur a
     {
-        display: block;
-    }
-
-    #parent
-    {
-        background-color: #ffffff;
-        width: 100%;
-    }
-
-    #parent img
-    {
-        width: 100%;
-        margin: 0%;
+        width: 40%;
     }
 
     /*populaires*/
-    #parent1
-    {
-        width: 95%;
-        margin: 2%;
-    }
-
-    #conteneur1
+    .children1
     {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-
-    .children1
-    {  
         flex-direction: column;
-        width: 25%;
     }
 
-    #conteneur1 img
+    #parent1 img
     {
         width: 100%;
         border-radius: 20px 20px 0 0;
