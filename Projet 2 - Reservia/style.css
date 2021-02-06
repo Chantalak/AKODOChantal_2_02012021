@@ -475,7 +475,7 @@ figcaption i
     /*header*/
     header
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: 0%;
     }
 
@@ -496,6 +496,11 @@ figcaption i
     {
         flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+
+    .navbar li a
+    {
+        padding: 20px;
     }
 
     .navbar p
@@ -520,9 +525,7 @@ figcaption i
     }
 
     .bar li a
-    {
-       
-        color: black;
+    { 
         border-bottom: 3px solid #F2F2F2;
     }
 
@@ -565,7 +568,6 @@ figcaption i
     .filtres li
     {
         border-radius: 40px;
-        border: 3px solid #F2F2F2;
     }
 
     .filtres li i
@@ -597,27 +599,32 @@ figcaption i
         border: 1px solid #F2F2F2;
         border-radius: 20px;
         display: flex;
-        align-items: center;
-        font-size: 1.2em;
         width: 90%;
         margin-left: 5%;
     }
 
     .recherchebis #fas1
     {
+        font-size: 1em;
         background-color: #F2F2F2;
         border-radius: 20px 0 0 20px;
-        padding: 23px;
+        padding: 21px;
     }   
 
     .search
     {
-        width: 100%;
+        width: 80%;
         border: none;
         font-weight: 700;
         font-size: 0.9em;
         font-family: 'Raleway', sans-serif;
-        padding: 20px;
+        padding-left: 20px;
+    }
+
+    input.search 
+    {
+        font-size: 1.2em;
+        color: black;
     }
 
     .recherchebis #fas2
@@ -626,8 +633,8 @@ figcaption i
         font-size: 1em;
         color: white;
         border: none;
-        padding: 21px;
-        border-radius: 20px;
+        padding: 19px;
+        border-radius: 19px;
     }
 
       /*section 1*/
