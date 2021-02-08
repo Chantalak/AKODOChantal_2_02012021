@@ -110,6 +110,11 @@ h1
     padding-left: 1%;
     width: 225px;
 }
+input::placeholder
+{
+    color: black;
+    font-size: 1.2em;
+}
 
 .recherche button
 {
@@ -621,7 +626,7 @@ figcaption i
         padding-left: 20px;
     }
 
-    input.search 
+    input::placeholder
     {
         font-size: 1.2em;
         color: black;
