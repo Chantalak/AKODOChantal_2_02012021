@@ -664,8 +664,15 @@ figcaption i
 
     #parent img
     {
+        height: 140px;
         width: 100%;
         margin: 0%;
+        object-position: 100% 65%;
+    }
+
+    #parent figcaption
+    {
+        line-height: 0.5em;
     }
 
     /*populaires*/
