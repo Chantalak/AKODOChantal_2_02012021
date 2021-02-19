@@ -675,7 +675,17 @@ figcaption i
 
     #parent figcaption
     {
-        line-height: 0.5em;
+        line-height: 2em;
+    }
+
+    .children h3
+    {
+        margin: 0%;
+    }
+
+    .plus
+    {
+        padding: 5%;
     }
 
     /*populaires*/
@@ -690,6 +700,11 @@ figcaption i
     .children1 h3, p
     {
         margin: 0%;
+    }
+
+    .children1 figcaption
+    {
+        width: 100%;
     }
     
     /*activités*/
