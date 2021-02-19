@@ -110,6 +110,7 @@ h1
     border: 0.5px solid #f2f2f2;
     padding-left: 1%;
     width: 225px;
+    outline-style: none;
 }
 input::placeholder
 {
@@ -127,6 +128,7 @@ input::placeholder
     font-size: 0.9em;
     border-radius: 0px 20px 20px 0px;
     font-family: 'Raleway', sans-serif;
+    outline-style: none;
 }
 
 /*seconde barre de recherche*/
@@ -460,7 +462,7 @@ figcaption i
 
 /*breakpoints*/
 
-@media (min-width: 300px) and (max-width: 768px) 
+@media (min-width: 320px) and (max-width: 768px) 
 {
     /*body*/
     * 
@@ -553,6 +555,7 @@ figcaption i
     header p
     {
         padding-left: 5%;
+        margin-bottom: 3%;
     }
 
     /*filtres*/
@@ -602,7 +605,7 @@ figcaption i
         border: 1px solid #F2F2F2;
         border-radius: 20px;
         display: flex;
-        width: 400px;
+        width: 350px;
         margin-left: 5%;
     }
 
@@ -622,6 +625,7 @@ figcaption i
         font-size: 0.9em;
         font-family: 'Raleway', sans-serif;
         padding-left: 20px;
+        outline-style: none;
     }
 
     input::placeholder
@@ -638,6 +642,7 @@ figcaption i
         border: none;
         padding: 19px;
         border-radius: 19px;
+        outline-style: none;
     }
 
       /*section 1*/
@@ -680,6 +685,11 @@ figcaption i
         width: 100%;
         margin: 0%;
         border-radius: 0%;
+    }
+
+    .children1 h3, p
+    {
+        margin: 0%;
     }
     
     /*activités*/
