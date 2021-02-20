@@ -224,9 +224,15 @@ h2
     padding-left: 3%;
 }
 
-figcaption i
+.stars
 {
+    display: inline-flex;
     color: #0065FC;
+}
+
+span i
+{
+    color: #DEEBFF;
 }
 
 /*hebergements*/
@@ -274,11 +280,6 @@ figcaption i
 {
     padding: 0px 0px 5px 10px;
     line-height: 1em;
-}
-
-.stars
-{
-    display: flex;
 }
 
 .plus
@@ -344,11 +345,6 @@ figcaption i
 .children1 figcaption
 {
     padding-left: 5%;
-}
-
-.stars1
-{
-    display: flex;
 }
 
 /*activités*/
@@ -655,11 +651,6 @@ figcaption i
         padding: 0%;
     }
 
-    .gris
-    {
-        color:#F2F2F2;
-    }
-
     /*hebergements*/
     #conteneur a
     {
@@ -685,6 +676,11 @@ figcaption i
         line-height: 2em;
     }
 
+     .stars
+    {
+        display: inline-table;
+    }
+
     .children h3
     {
         margin: 0%;
@@ -707,11 +703,6 @@ figcaption i
     .children1 h3, p
     {
         margin: 0%;
-    }
-
-    .children1 figcaption
-    {
-        width: 100%;
     }
     
     /*activités*/
