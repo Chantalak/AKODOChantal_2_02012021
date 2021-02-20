@@ -94,7 +94,7 @@ h1
     display: flex;
 }
 
-.recherche i
+.recherche #fas1
 {
     font-size: 1.2em;
     background-color: #f2f2f2;
@@ -118,7 +118,7 @@ input::placeholder
     font-size: 1.2em;
 }
 
-.recherche button
+.bouton1
 {
     background-color:  #0065FC;
     color: white;
@@ -132,7 +132,7 @@ input::placeholder
 }
 
 /*seconde barre de recherche*/
-.recherchebis
+.bouton2
 {
     display: none;
 }
@@ -594,13 +594,8 @@ figcaption i
         padding-left: 3%;
     }
 
-    /*barre de recherche*/
+    /*seconde barre de recherche*/
     .recherche
-    {
-        display: none;
-    }
-
-    .recherchebis
     {
         border: 1px solid #F2F2F2;
         border-radius: 20px;
@@ -609,7 +604,7 @@ figcaption i
         margin-left: 5%;
     }
 
-    .recherchebis #fas1
+    .recherche #fas1
     {
         font-size: 1em;
         background-color: #F2F2F2;
@@ -634,8 +629,9 @@ figcaption i
         color: black;
     }
 
-    .recherchebis #fas2
+    .bouton2
     {
+        display: flex;
         background-color:  #0065FC;
         font-size: 1em;
         color: white;
@@ -645,12 +641,23 @@ figcaption i
         outline-style: none;
     }
 
+    /*barre de recherche*/
+    .bouton1
+    {
+        display: none;
+    }
+
       /*section 1*/
     #bloc
     {
         display: flex;
         flex-direction: column-reverse;
         padding: 0%;
+    }
+
+    .gris
+    {
+        color:#F2F2F2;
     }
 
     /*hebergements*/
