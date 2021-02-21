@@ -219,11 +219,6 @@ input::placeholder
     padding: 0% 2% 1% 2%;
 }
 
-h2
-{
-    padding-left: 3%;
-}
-
 .stars
 {
     display: inline-flex;
@@ -350,9 +345,13 @@ span i
 /*activités*/
 #activites
 {
-    padding: 0% 2% 1% 2%;
-    display: flex;
-    flex-direction: column ;
+    padding: 0% 1% 1% 1%;
+   
+}
+
+#activites h2
+{
+    padding-left: 1%;
 }
 
 #conteneur2
@@ -396,7 +395,7 @@ span i
 .images1 
 {
     width: 100%;
-    height: 410px;
+    height: 405px;
     object-fit: cover;
 }
 
@@ -417,7 +416,7 @@ span i
 .images4
 {
     width: 100%;
-    height: 410px;
+    height: 405px;
     object-fit: cover;
 }
 
@@ -708,7 +707,7 @@ span i
     /*activités*/
     #activites
     {
-        padding: 0%;
+        padding: 3%;
     }
     
     #conteneur2
@@ -731,6 +730,12 @@ span i
     {
         padding: 1% 0 1% 3%;
     }
+
+    h2
+    {
+        padding-left: 3%;
+    }       
+
     /*footer*/
     #conteneur3
     {
